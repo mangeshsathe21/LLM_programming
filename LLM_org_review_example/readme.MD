@@ -1,6 +1,6 @@
 # 🤖 LLM Organization Review Generator
 
-An AI-powered web application that generates organization and employee reviews using **React**, **FastAPI**, and local **Ollama** LLMs.
+An AI-powered demo that analyses organization reviews and generates rating and summary using **React**, **FastAPI**, and local **Ollama** LLMs. Also generates prompt stats for basic understanding.
 
 ---
 
