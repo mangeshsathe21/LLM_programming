@@ -16,7 +16,6 @@ An AI-powered web application that generates organization and employee reviews u
   <img src="./assets/app-screenshot3.png" alt="LLM Review Generator Screenshot" width="800" />
 </p>
 
-> *Place your application screenshots inside the `assets/` folder as `app-screenshot.png`.*
 
 ---
 
@@ -56,7 +55,7 @@ Download and launch your desired LLM model (e.g. I have used model, `llama3.1`):
 
 ```bash
 ollama run llama3
-
+```
 ---
 
 ### Step 2: Start Backend Server (FastAPI)
@@ -66,7 +65,7 @@ Backend runs at http://localhost:8000
 ```bash
 cd backend
 uv run uvicorn app:main --reload
-
+```
 ---
 
 ### Step 3: Start Frontend Server (React)
@@ -77,7 +76,7 @@ Frontend web app runs at http://localhost:5173
 cd frontend
 cd web
 npm run dev
-
+```
 ---
 
 ### How to Use
