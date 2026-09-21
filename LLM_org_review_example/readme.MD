@@ -7,15 +7,17 @@ An AI-powered web application that generates organization and employee reviews u
 ## 📸 Application Preview
 
 <p align="center">
-  <img src="./assets/app-screenshot1.png" alt="LLM Review Generator Screenshot" width="800" />
+  <img src="./assets/app-screenshot1.png" alt="Form Screenshot" width="800" />
 </p>
 <p align="center">
-  <img src="./assets/app-screenshot2.png" alt="LLM Review Generator Screenshot" width="800" />
+  <img src="./assets/app-screenshot2.png" alt="FastAPI Screenshot" width="800" />
 </p>
 <p align="center">
-  <img src="./assets/app-screenshot3.png" alt="LLM Review Generator Screenshot" width="800" />
+  <img src="./assets/app-screenshot3.png" alt="Result" width="800" />
 </p>
-
+<p align="center">
+  <img src="./assets/app-screenshot4.png" alt="Ollama Screenshot" width="800" />
+</p>
 
 ---
 
@@ -83,7 +85,7 @@ npm run dev
 
 
 Ensure you have the following installed:
-1. Ensure Ollama is running in the background.
+1. Ensure Ollama is running in the background. Check Ollama info screenshot for the models you have locally.
 2. Launch both backend and frontend servers using the steps above.
 3. Open http://localhost:5173 in your browser for React.
 4. Open http://127.0.0.1:8000/docs in your browser for FatsAPI Swagger.
