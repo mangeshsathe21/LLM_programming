@@ -7,7 +7,13 @@ An AI-powered web application that generates organization and employee reviews u
 ## 📸 Application Preview
 
 <p align="center">
-  <img src="./assets/app-screenshot.png" alt="LLM Review Generator Screenshot" width="800" />
+  <img src="./assets/app-screenshot1.png" alt="LLM Review Generator Screenshot" width="800" />
+</p>
+<p align="center">
+  <img src="./assets/app-screenshot2.png" alt="LLM Review Generator Screenshot" width="800" />
+</p>
+<p align="center">
+  <img src="./assets/app-screenshot3.png" alt="LLM Review Generator Screenshot" width="800" />
 </p>
 
 > *Place your application screenshots inside the `assets/` folder as `app-screenshot.png`.*
@@ -33,7 +39,7 @@ An AI-powered web application that generates organization and employee reviews u
 
 ## 🚀 Local Setup & Run Guide
 
-Follow these steps to run the application on your local machine.
+Follow these steps to run the application on your local machine. Please note,Ollama/LLM performance will depend on the configuration of your hardware. Higher configuration harware might respond faster. Please modify the temperature or add new parameters if required
 
 ### Prerequisites
 
@@ -46,7 +52,40 @@ Ensure you have the following installed:
 
 ### Step 1: Start Ollama
 
-Download and launch your desired LLM model (e.g., `llama3`):
+Download and launch your desired LLM model (e.g. I have used model, `llama3.1`):
 
 ```bash
 ollama run llama3
+
+---
+
+### Step 2: Start Backend Server (FastAPI)
+
+Backend runs at http://localhost:8000
+
+```bash
+cd backend
+uv run uvicorn app:main --reload
+
+---
+
+### Step 3: Start Frontend Server (React)
+
+Frontend web app runs at http://localhost:5173
+
+```bash
+cd frontend
+cd web
+npm run dev
+
+---
+
+### How to Use
+
+
+Ensure you have the following installed:
+1. Ensure Ollama is running in the background.
+2. Launch both backend and frontend servers using the steps above.
+3. Open http://localhost:5173 in your browser for React.
+4. Open http://127.0.0.1:8000/docs in your browser for FatsAPI Swagger.
+5. Input details into the organizational name textbox and click Generate to retrieve AI-generated reviews in real time. Make sure you have HARD CODED KEYS for the DEMO purpose. Change them or integrate yout API in place.
